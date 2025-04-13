@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bundle.css">
+    <title>Better Eating</title>
+  </head>
+  <body>
+    <main>
+      <header>
+          <h1>Better Eating</h1>
+          <p>Trying to eat healthier doesn't have to be hard.</p>
+      </header>
+      <section id="sidebar">
+        <nav>
+          <a href="/">Home</a>
+          <a href="/recipes">Recipes</a>
+        </nav>
+      </section>
+      <section id="content">
+        <section>
+          {{ content | safe }}
+        </section>
+        <footer>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>

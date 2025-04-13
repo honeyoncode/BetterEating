@@ -1,0 +1,54 @@
+---
+layout: mainlayout.njk
+---
+
+<h2><img src="/images/icons/bowl2.gif" alt="Bowl of ramen"> Recipes</h2>
+
+<h3>Breakfast</h3>
+<ul>
+{%- for breakfast in collections.breakfast | reverse -%}
+    <li>
+        <a href={{ breakfast.url }}>{{ breakfast.data.title }}</a>
+    </li>
+{%- endfor -%}
+</ul>
+
+<h3>Soups</h3>
+<ul>
+{%- for soup in collections.soup | reverse -%}
+    <li>
+        <a href={{ soup.url }}>{{ soup.data.title }}</a>
+    </li>
+{%- endfor -%}
+</ul>
+
+<h3>Lunch</h3>
+<ul>
+{%- for lunch in collections.lunch | reverse -%}
+    <li>
+        <a href={{ lunch.url }}>{{ lunch.data.title }}</a>
+    </li>
+{%- endfor -%}
+</ul>
+
+<h3>Main meals</h3>
+<ul>
+{%- for recipe in collections.main | reverse -%}
+    <li>
+        <a href={{ recipe.url }}>{{ recipe.data.title }}</a>
+    </li>
+{%- endfor -%}
+</ul>
+
+<h3>Fakeaway</h3>
+<p>Cravings for takeaway are bound to happen. Rather than giving in to those cravings,
+try to make your own to satisfy the urge. It won't be the healthiest thing in the world,
+but it'll be better than caving in and you're more likely to stay on top of your diet if you resist.
+</p>
+<ul>
+{%- for recipe in collections.fakeaway | reverse -%}
+    <li>
+        <a href={{ recipe.url }}>{{ recipe.data.title }}</a>
+    </li>
+{%- endfor -%}
+</ul>
