@@ -52,3 +52,12 @@ but it'll be better than caving in and you're more likely to stay on top of your
     </li>
 {%- endfor -%}
 </ul>
+
+<h3>Desserts</h3>
+<ul>
+{%- for recipe in collections.dessert | reverse -%}
+    <li>
+        <a href={{ recipe.url }}>{{ recipe.data.title }}</a>
+    </li>
+{%- endfor -%}
+</ul>
